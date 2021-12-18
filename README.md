@@ -4,9 +4,9 @@
 ## The assignment
 Please create an account on Project Euler: https://projecteuler.net
 
-Your assignment is to solve as many problems as you can by Sunday, December 19, 11:59pm. The more you solve, the better!
+Your assignment is to solve as many problems as you can by Sunday, January 2, 11:59pm. The more you solve, the better!
 
-Once you're done, we'll review your code and decide whether or not to invite you for one final interview at our office. The final interview should take at most 1.5 hours. We will study your submission and get back to you by Monday, December 20, 11:59pm at the latest.
+Once you're done, we'll review your code and decide whether or not to invite you for one final interview at our office. The final interview should take at most 1.5 hours. We will study your submission and get back to you by Monday, January 3, 11:59pm at the latest.
 
 
 ## Instructions
