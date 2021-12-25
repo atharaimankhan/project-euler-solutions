@@ -20,3 +20,17 @@ def is_prime(num):
         
     else:
         return True
+
+def count_factors(num:int):
+    if num<=0:
+        return None
+    if num==1:
+        return 1
+    count = 2               # 1 and number itself counts 2 
+    for i in range(2,int(num**0.5)+1):         # we start from 2 and check till the half of the number
+        if(num%i==0):
+            if num/i == i:
+                count+=1
+            else:
+                count+=2
+    return count
