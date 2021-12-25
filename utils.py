@@ -34,3 +34,29 @@ def count_factors(num:int):
             else:
                 count+=2
     return count
+
+# def count_chain(n:int):
+#     if n<1:
+#         return None
+#     if n==1:
+#         return n
+#     elif n%2==0:
+#         return count_chain(n/2)+1
+#     elif n%2!=0:
+#         return count_chain((3*n)+1)
+
+
+def count_chain(n:int):
+    if n<1:
+        return None
+    count=0
+    while n!=1:
+        if n%2==0:
+            n=n/2
+        elif n%2!=0:
+            n=(3*n)+1
+        count+=1
+    count+=1
+
+    return count
+    
