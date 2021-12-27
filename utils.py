@@ -35,6 +35,17 @@ def count_factors(num:int):
                 count+=2
     return count
 
+def sum_of_proper_divisors(num:int):
+    if num<=0:
+        return None
+    if num==1:
+        return 1
+    sum=0         
+    for i in range(1,int(num/2)+1):         
+        if(num%i==0):
+            sum += i
+
+    return sum
 
 def count_chain(n:int):
     if n<1:
