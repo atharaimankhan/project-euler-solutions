@@ -27,23 +27,13 @@ def count_factors(num:int):
     if num==1:
         return 1
     count = 2               # 1 and number itself counts 2 
-    for i in range(2,int(num**0.5)+1):         # we start from 2 and check till the half of the number
+    for i in range(2,int(num**0.5)+1):         
         if(num%i==0):
             if num/i == i:
                 count+=1
             else:
                 count+=2
     return count
-
-# def count_chain(n:int):
-#     if n<1:
-#         return None
-#     if n==1:
-#         return n
-#     elif n%2==0:
-#         return count_chain(n/2)+1
-#     elif n%2!=0:
-#         return count_chain((3*n)+1)
 
 
 def count_chain(n:int):
