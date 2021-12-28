@@ -67,3 +67,4 @@ def count_chain(n:int):
 
     return count
     
+
