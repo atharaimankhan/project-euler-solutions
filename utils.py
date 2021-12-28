@@ -40,12 +40,18 @@ def sum_of_proper_divisors(num:int):
         return None
     if num==1:
         return 1
-    sum=0         
-    for i in range(1,int(num/2)+1):         
+    sum=1      
+    for i in range(2,int(num**0.5)+1):         
         if(num%i==0):
-            sum += i
+            sum += i 
+            if i != int(num/i):
+                sum += + int(num/i)
 
     return sum
+
+def is_abundant(num:int):
+    return True if sum_of_proper_divisors(num)> num else False
+
 
 def count_chain(n:int):
     if n<1:
