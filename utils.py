@@ -68,3 +68,33 @@ def count_chain(n:int):
     return count
     
 
+def print_grid(grid:list):
+    for i in range(len(grid)):
+        for j in range(len(grid[i])):
+            print(grid[i][j], end=' ')
+        print('', end='\n')
+
+
+def grid_move_right(position:list):
+    position[1]+=1
+    return 
+
+def grid_move_down(position:list):
+    position[0]+=1
+
+def grid_move_left(position:list):
+    position[1]-=1
+
+def grid_move_up(position:list):
+    position[0]-=1
+
+def is_grid_complete(grid):
+    for row in grid:
+        if None in row:
+            return False
+    else:
+        return True
+def set_grid_at_position(grid:list,position:list, num:int):
+    if(not is_grid_complete(grid)):
+        grid[position[0]][position[1]] = num
+
