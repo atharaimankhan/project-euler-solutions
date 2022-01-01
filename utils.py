@@ -98,3 +98,9 @@ def set_grid_at_position(grid:list,position:list, num:int):
     if(not is_grid_complete(grid)):
         grid[position[0]][position[1]] = num
 
+
+def is_pandigital(num:int):
+    str_num = str(num)
+    return True if len(set(str_num)) == len(str_num) and '0' not in str_num else False
+
+    
