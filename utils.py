@@ -122,3 +122,12 @@ def remove_identical_digit_in(n,d):
     else:
         return -1
     
+
+def is_palindrome(n:int):
+    if n%10 == 0:
+        return False
+    str_n = str(n)
+    if str_n == str_n[::-1]:
+        return True
+    else:
+        return False
