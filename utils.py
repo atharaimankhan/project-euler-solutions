@@ -103,4 +103,22 @@ def is_pandigital(num:int):
     str_num = str(num)
     return True if len(set(str_num)) == len(str_num) and '0' not in str_num else False
 
+def remove_identical_digit_in(n,d):
+    str_n = str(n)
+    str_d = str(d)
+    if str_n == str_d:
+        return -1
+    
+    if str_n[0] == str_d[1]:
+        str_n = str_n[1:]
+        str_d = str_d[:1]
+        
+    elif str_n[1] == str_d[0]:
+        str_n = str_n[:1]
+        str_d = str_d[1:]
+
+    if('0' not in str_d and '0' not in str_n):
+            return (int(str_n),int(str_d))
+    else:
+        return -1
     
