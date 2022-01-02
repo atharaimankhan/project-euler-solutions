@@ -103,6 +103,16 @@ def is_pandigital(num:int):
     str_num = str(num)
     return True if len(set(str_num)) == len(str_num) and '0' not in str_num else False
 
+def is_pandigital_new(num:int):
+    str_num = str(num)
+    s = set()
+    for i in range(1,len(str_num)+1):
+        s.add(str(i))
+    if set(str_num) == s:
+        return True
+    else:
+        return False
+
 def remove_identical_digit_in(n,d):
     str_n = str(n)
     str_d = str(d)
